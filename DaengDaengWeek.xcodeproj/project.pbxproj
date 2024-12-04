@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		38102C9B2D00A2180078F80A /* Font.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38102C9A2D00A2180078F80A /* Font.swift */; };
+		38102C9D2D00A2870078F80A /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38102C9C2D00A2870078F80A /* Color.swift */; };
+		38102CA22D00A4760078F80A /* Maplestory OTF Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 38102C9F2D00A30B0078F80A /* Maplestory OTF Bold.otf */; };
+		38102CA32D00A4790078F80A /* Maplestory OTF Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = 38102CA02D00A30B0078F80A /* Maplestory OTF Light.otf */; };
 		381751472CF39DB300DBE308 /* DaengDaengWeekApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 381751462CF39DB300DBE308 /* DaengDaengWeekApp.swift */; };
 		381751492CF39DB300DBE308 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 381751482CF39DB300DBE308 /* ContentView.swift */; };
 		3817514B2CF39DB500DBE308 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3817514A2CF39DB500DBE308 /* Assets.xcassets */; };
@@ -42,6 +46,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		38102C9A2D00A2180078F80A /* Font.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Font.swift; sourceTree = "<group>"; };
+		38102C9C2D00A2870078F80A /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
+		38102C9F2D00A30B0078F80A /* Maplestory OTF Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Maplestory OTF Bold.otf"; sourceTree = "<group>"; };
+		38102CA02D00A30B0078F80A /* Maplestory OTF Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Maplestory OTF Light.otf"; sourceTree = "<group>"; };
+		38102CA12D00A35A0078F80A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		381751432CF39DB300DBE308 /* DaengDaengWeek.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DaengDaengWeek.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		381751462CF39DB300DBE308 /* DaengDaengWeekApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DaengDaengWeekApp.swift; sourceTree = "<group>"; };
 		381751482CF39DB300DBE308 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -88,6 +97,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		38102C9E2D00A2DE0078F80A /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				38102C9F2D00A30B0078F80A /* Maplestory OTF Bold.otf */,
+				38102CA02D00A30B0078F80A /* Maplestory OTF Light.otf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
 		3817513A2CF39DB300DBE308 = {
 			isa = PBXGroup;
 			children = (
@@ -107,7 +125,9 @@
 		381751452CF39DB300DBE308 /* DaengDaengWeek */ = {
 			isa = PBXGroup;
 			children = (
+				38102CA12D00A35A0078F80A /* Info.plist */,
 				381751592CF3A90400DBE308 /* App */,
+				381751A42CF61C7D00DBE308 /* Extensions */,
 				3817515A2CF3A96D00DBE308 /* Models */,
 				381751A12CF3BA3D00DBE308 /* CustomViews */,
 				381751652CF3AAB500DBE308 /* Views */,
@@ -169,6 +189,7 @@
 				3817514A2CF39DB500DBE308 /* Assets.xcassets */,
 				381751672CF3AAE100DBE308 /* Sounds */,
 				381751682CF3AB2000DBE308 /* Textures */,
+				38102C9E2D00A2DE0078F80A /* Fonts */,
 			);
 			path = Assets;
 			sourceTree = "<group>";
@@ -311,6 +332,15 @@
 			path = CustomViews;
 			sourceTree = "<group>";
 		};
+		381751A42CF61C7D00DBE308 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				38102C9A2D00A2180078F80A /* Font.swift */,
+				38102C9C2D00A2870078F80A /* Color.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -369,6 +399,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				38102CA32D00A4790078F80A /* Maplestory OTF Light.otf in Resources */,
+				38102CA22D00A4760078F80A /* Maplestory OTF Bold.otf in Resources */,
 				3817514E2CF39DB500DBE308 /* Preview Assets.xcassets in Resources */,
 				3817514B2CF39DB500DBE308 /* Assets.xcassets in Resources */,
 			);
@@ -386,6 +418,7 @@
 				3817519C2CF3B99300DBE308 /* EncyclopediaModalView.swift in Sources */,
 				381751532CF39DB500DBE308 /* DaengDaengWeek.xcdatamodeld in Sources */,
 				3817517A2CF3B50C00DBE308 /* HealthViewModel.swift in Sources */,
+				38102C9D2D00A2870078F80A /* Color.swift in Sources */,
 				3817519A2CF3B98500DBE308 /* MedicalChartModalView.swift in Sources */,
 				381751492CF39DB300DBE308 /* ContentView.swift in Sources */,
 				381751842CF3B6FB00DBE308 /* AnimationManager.swift in Sources */,
@@ -405,6 +438,7 @@
 				3817515C2CF3A9C200DBE308 /* Dog.swift in Sources */,
 				381751472CF39DB300DBE308 /* DaengDaengWeekApp.swift in Sources */,
 				381751A02CF3B9B300DBE308 /* LoadingView.swift in Sources */,
+				38102C9B2D00A2180078F80A /* Font.swift in Sources */,
 				381751942CF3B95700DBE308 /* WalkView.swift in Sources */,
 				381751922CF3B92700DBE308 /* MainView.swift in Sources */,
 				381751722CF3B2CC00DBE308 /* SettingsViewModel.swift in Sources */,
@@ -546,6 +580,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"DaengDaengWeek/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = DaengDaengWeek/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -575,6 +610,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"DaengDaengWeek/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = DaengDaengWeek/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

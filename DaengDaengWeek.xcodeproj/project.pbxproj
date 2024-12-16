@@ -11,6 +11,9 @@
 		38102C9D2D00A2870078F80A /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38102C9C2D00A2870078F80A /* Color.swift */; };
 		38102CA22D00A4760078F80A /* Maplestory OTF Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 38102C9F2D00A30B0078F80A /* Maplestory OTF Bold.otf */; };
 		38102CA32D00A4790078F80A /* Maplestory OTF Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = 38102CA02D00A30B0078F80A /* Maplestory OTF Light.otf */; };
+		38102CD02D10BA2F0078F80A /* MainScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38102CCF2D10BA2F0078F80A /* MainScene.swift */; };
+		38102CD22D10BC9B0078F80A /* HUDView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38102CD12D10BC9B0078F80A /* HUDView.swift */; };
+		38102CD42D10C6550078F80A /* ActionButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38102CD32D10C6550078F80A /* ActionButton.swift */; };
 		381751472CF39DB300DBE308 /* DaengDaengWeekApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 381751462CF39DB300DBE308 /* DaengDaengWeekApp.swift */; };
 		381751492CF39DB300DBE308 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 381751482CF39DB300DBE308 /* ContentView.swift */; };
 		3817514B2CF39DB500DBE308 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3817514A2CF39DB500DBE308 /* Assets.xcassets */; };
@@ -51,6 +54,9 @@
 		38102C9F2D00A30B0078F80A /* Maplestory OTF Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Maplestory OTF Bold.otf"; sourceTree = "<group>"; };
 		38102CA02D00A30B0078F80A /* Maplestory OTF Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Maplestory OTF Light.otf"; sourceTree = "<group>"; };
 		38102CA12D00A35A0078F80A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		38102CCF2D10BA2F0078F80A /* MainScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainScene.swift; sourceTree = "<group>"; };
+		38102CD12D10BC9B0078F80A /* HUDView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HUDView.swift; sourceTree = "<group>"; };
+		38102CD32D10C6550078F80A /* ActionButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionButton.swift; sourceTree = "<group>"; };
 		381751432CF39DB300DBE308 /* DaengDaengWeek.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DaengDaengWeek.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		381751462CF39DB300DBE308 /* DaengDaengWeekApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DaengDaengWeekApp.swift; sourceTree = "<group>"; };
 		381751482CF39DB300DBE308 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -321,6 +327,7 @@
 			isa = PBXGroup;
 			children = (
 				381751912CF3B92700DBE308 /* MainView.swift */,
+				38102CCF2D10BA2F0078F80A /* MainScene.swift */,
 			);
 			path = MainScene;
 			sourceTree = "<group>";
@@ -328,6 +335,8 @@
 		381751A12CF3BA3D00DBE308 /* CustomViews */ = {
 			isa = PBXGroup;
 			children = (
+				38102CD12D10BC9B0078F80A /* HUDView.swift */,
+				38102CD32D10C6550078F80A /* ActionButton.swift */,
 			);
 			path = CustomViews;
 			sourceTree = "<group>";
@@ -421,10 +430,12 @@
 				38102C9D2D00A2870078F80A /* Color.swift in Sources */,
 				3817519A2CF3B98500DBE308 /* MedicalChartModalView.swift in Sources */,
 				381751492CF39DB300DBE308 /* ContentView.swift in Sources */,
+				38102CD22D10BC9B0078F80A /* HUDView.swift in Sources */,
 				381751842CF3B6FB00DBE308 /* AnimationManager.swift in Sources */,
 				3817517E2CF3B5CF00DBE308 /* CoreDataManager.swift in Sources */,
 				3817518E2CF3B88E00DBE308 /* StartView.swift in Sources */,
 				381751902CF3B90D00DBE308 /* PledgeModalView.swift in Sources */,
+				38102CD02D10BA2F0078F80A /* MainScene.swift in Sources */,
 				381751702CF3B2C200DBE308 /* GameViewModel.swift in Sources */,
 				3817515E2CF3A9D000DBE308 /* GameState.swift in Sources */,
 				381751642CF3AA2100DBE308 /* UserSettings.swift in Sources */,
@@ -445,6 +456,7 @@
 				381751822CF3B66300DBE308 /* SoundManager.swift in Sources */,
 				381751782CF3B4EC00DBE308 /* WalkingViewModel.swift in Sources */,
 				3817519E2CF3B9A200DBE308 /* DogProfileModalView.swift in Sources */,
+				38102CD42D10C6550078F80A /* ActionButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

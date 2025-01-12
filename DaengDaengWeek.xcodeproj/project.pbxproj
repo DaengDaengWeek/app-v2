@@ -20,6 +20,8 @@
 		38102D362D340CA50078F80A /* WalkProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38102D352D340CA50078F80A /* WalkProgressView.swift */; };
 		38102D382D34163A0078F80A /* WalkProgressBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38102D372D34163A0078F80A /* WalkProgressBarView.swift */; };
 		38102D3A2D341C9D0078F80A /* AffectionProgressBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38102D392D341C9D0078F80A /* AffectionProgressBarView.swift */; };
+		38102D3C2D341F670078F80A /* OutlineTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38102D3B2D341F670078F80A /* OutlineTextView.swift */; };
+		38102D3E2D3429E10078F80A /* HospitalScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38102D3D2D3429E10078F80A /* HospitalScene.swift */; };
 		381751472CF39DB300DBE308 /* DaengDaengWeekApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 381751462CF39DB300DBE308 /* DaengDaengWeekApp.swift */; };
 		381751492CF39DB300DBE308 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 381751482CF39DB300DBE308 /* ContentView.swift */; };
 		3817514B2CF39DB500DBE308 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3817514A2CF39DB500DBE308 /* Assets.xcassets */; };
@@ -69,6 +71,8 @@
 		38102D352D340CA50078F80A /* WalkProgressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalkProgressView.swift; sourceTree = "<group>"; };
 		38102D372D34163A0078F80A /* WalkProgressBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalkProgressBarView.swift; sourceTree = "<group>"; };
 		38102D392D341C9D0078F80A /* AffectionProgressBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AffectionProgressBarView.swift; sourceTree = "<group>"; };
+		38102D3B2D341F670078F80A /* OutlineTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OutlineTextView.swift; sourceTree = "<group>"; };
+		38102D3D2D3429E10078F80A /* HospitalScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HospitalScene.swift; sourceTree = "<group>"; };
 		381751432CF39DB300DBE308 /* DaengDaengWeek.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DaengDaengWeek.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		381751462CF39DB300DBE308 /* DaengDaengWeekApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DaengDaengWeekApp.swift; sourceTree = "<group>"; };
 		381751482CF39DB300DBE308 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -321,6 +325,7 @@
 			isa = PBXGroup;
 			children = (
 				381751972CF3B97900DBE308 /* HospitalView.swift */,
+				38102D3D2D3429E10078F80A /* HospitalScene.swift */,
 				381751992CF3B98400DBE308 /* MedicalChartModalView.swift */,
 			);
 			path = HospitalScene;
@@ -355,6 +360,7 @@
 				38102D352D340CA50078F80A /* WalkProgressView.swift */,
 				38102D372D34163A0078F80A /* WalkProgressBarView.swift */,
 				38102D392D341C9D0078F80A /* AffectionProgressBarView.swift */,
+				38102D3B2D341F670078F80A /* OutlineTextView.swift */,
 			);
 			path = CustomViews;
 			sourceTree = "<group>";
@@ -444,6 +450,7 @@
 				381751982CF3B97900DBE308 /* HospitalView.swift in Sources */,
 				381751502CF39DB500DBE308 /* Persistence.swift in Sources */,
 				3817519C2CF3B99300DBE308 /* EncyclopediaModalView.swift in Sources */,
+				38102D3C2D341F670078F80A /* OutlineTextView.swift in Sources */,
 				381751532CF39DB500DBE308 /* DaengDaengWeek.xcdatamodeld in Sources */,
 				3817517A2CF3B50C00DBE308 /* HealthViewModel.swift in Sources */,
 				38102C9D2D00A2870078F80A /* Color.swift in Sources */,
@@ -455,6 +462,7 @@
 				38102D3A2D341C9D0078F80A /* AffectionProgressBarView.swift in Sources */,
 				3817518E2CF3B88E00DBE308 /* StartView.swift in Sources */,
 				381751902CF3B90D00DBE308 /* PledgeModalView.swift in Sources */,
+				38102D3E2D3429E10078F80A /* HospitalScene.swift in Sources */,
 				38102D362D340CA50078F80A /* WalkProgressView.swift in Sources */,
 				38102CD02D10BA2F0078F80A /* MainScene.swift in Sources */,
 				381751702CF3B2C200DBE308 /* GameViewModel.swift in Sources */,

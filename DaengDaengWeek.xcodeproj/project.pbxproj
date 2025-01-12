@@ -13,7 +13,13 @@
 		38102CA32D00A4790078F80A /* Maplestory OTF Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = 38102CA02D00A30B0078F80A /* Maplestory OTF Light.otf */; };
 		38102CD02D10BA2F0078F80A /* MainScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38102CCF2D10BA2F0078F80A /* MainScene.swift */; };
 		38102CD22D10BC9B0078F80A /* HUDView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38102CD12D10BC9B0078F80A /* HUDView.swift */; };
-		38102CD42D10C6550078F80A /* ActionButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38102CD32D10C6550078F80A /* ActionButton.swift */; };
+		38102CD42D10C6550078F80A /* BigActionButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38102CD32D10C6550078F80A /* BigActionButton.swift */; };
+		38102D302D3407550078F80A /* WalkScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38102D2F2D3407550078F80A /* WalkScene.swift */; };
+		38102D322D3409F50078F80A /* SmallActionButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38102D312D3409F50078F80A /* SmallActionButton.swift */; };
+		38102D342D340B570078F80A /* HomeButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38102D332D340B570078F80A /* HomeButton.swift */; };
+		38102D362D340CA50078F80A /* WalkProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38102D352D340CA50078F80A /* WalkProgressView.swift */; };
+		38102D382D34163A0078F80A /* WalkProgressBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38102D372D34163A0078F80A /* WalkProgressBarView.swift */; };
+		38102D3A2D341C9D0078F80A /* AffectionProgressBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38102D392D341C9D0078F80A /* AffectionProgressBarView.swift */; };
 		381751472CF39DB300DBE308 /* DaengDaengWeekApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 381751462CF39DB300DBE308 /* DaengDaengWeekApp.swift */; };
 		381751492CF39DB300DBE308 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 381751482CF39DB300DBE308 /* ContentView.swift */; };
 		3817514B2CF39DB500DBE308 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3817514A2CF39DB500DBE308 /* Assets.xcassets */; };
@@ -56,7 +62,13 @@
 		38102CA12D00A35A0078F80A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		38102CCF2D10BA2F0078F80A /* MainScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainScene.swift; sourceTree = "<group>"; };
 		38102CD12D10BC9B0078F80A /* HUDView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HUDView.swift; sourceTree = "<group>"; };
-		38102CD32D10C6550078F80A /* ActionButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionButton.swift; sourceTree = "<group>"; };
+		38102CD32D10C6550078F80A /* BigActionButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BigActionButton.swift; sourceTree = "<group>"; };
+		38102D2F2D3407550078F80A /* WalkScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalkScene.swift; sourceTree = "<group>"; };
+		38102D312D3409F50078F80A /* SmallActionButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmallActionButton.swift; sourceTree = "<group>"; };
+		38102D332D340B570078F80A /* HomeButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeButton.swift; sourceTree = "<group>"; };
+		38102D352D340CA50078F80A /* WalkProgressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalkProgressView.swift; sourceTree = "<group>"; };
+		38102D372D34163A0078F80A /* WalkProgressBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalkProgressBarView.swift; sourceTree = "<group>"; };
+		38102D392D341C9D0078F80A /* AffectionProgressBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AffectionProgressBarView.swift; sourceTree = "<group>"; };
 		381751432CF39DB300DBE308 /* DaengDaengWeek.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DaengDaengWeek.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		381751462CF39DB300DBE308 /* DaengDaengWeekApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DaengDaengWeekApp.swift; sourceTree = "<group>"; };
 		381751482CF39DB300DBE308 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -318,6 +330,7 @@
 			isa = PBXGroup;
 			children = (
 				381751932CF3B95700DBE308 /* WalkView.swift */,
+				38102D2F2D3407550078F80A /* WalkScene.swift */,
 				381751952CF3B96A00DBE308 /* WalkLogModalView.swift */,
 			);
 			path = ParkScene;
@@ -336,7 +349,12 @@
 			isa = PBXGroup;
 			children = (
 				38102CD12D10BC9B0078F80A /* HUDView.swift */,
-				38102CD32D10C6550078F80A /* ActionButton.swift */,
+				38102CD32D10C6550078F80A /* BigActionButton.swift */,
+				38102D312D3409F50078F80A /* SmallActionButton.swift */,
+				38102D332D340B570078F80A /* HomeButton.swift */,
+				38102D352D340CA50078F80A /* WalkProgressView.swift */,
+				38102D372D34163A0078F80A /* WalkProgressBarView.swift */,
+				38102D392D341C9D0078F80A /* AffectionProgressBarView.swift */,
 			);
 			path = CustomViews;
 			sourceTree = "<group>";
@@ -422,6 +440,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				38102D342D340B570078F80A /* HomeButton.swift in Sources */,
 				381751982CF3B97900DBE308 /* HospitalView.swift in Sources */,
 				381751502CF39DB500DBE308 /* Persistence.swift in Sources */,
 				3817519C2CF3B99300DBE308 /* EncyclopediaModalView.swift in Sources */,
@@ -433,20 +452,25 @@
 				38102CD22D10BC9B0078F80A /* HUDView.swift in Sources */,
 				381751842CF3B6FB00DBE308 /* AnimationManager.swift in Sources */,
 				3817517E2CF3B5CF00DBE308 /* CoreDataManager.swift in Sources */,
+				38102D3A2D341C9D0078F80A /* AffectionProgressBarView.swift in Sources */,
 				3817518E2CF3B88E00DBE308 /* StartView.swift in Sources */,
 				381751902CF3B90D00DBE308 /* PledgeModalView.swift in Sources */,
+				38102D362D340CA50078F80A /* WalkProgressView.swift in Sources */,
 				38102CD02D10BA2F0078F80A /* MainScene.swift in Sources */,
 				381751702CF3B2C200DBE308 /* GameViewModel.swift in Sources */,
 				3817515E2CF3A9D000DBE308 /* GameState.swift in Sources */,
 				381751642CF3AA2100DBE308 /* UserSettings.swift in Sources */,
 				381751622CF3AA1500DBE308 /* MedicalLog.swift in Sources */,
 				381751962CF3B96A00DBE308 /* WalkLogModalView.swift in Sources */,
+				38102D322D3409F50078F80A /* SmallActionButton.swift in Sources */,
+				38102D302D3407550078F80A /* WalkScene.swift in Sources */,
 				381751602CF3AA0D00DBE308 /* WalkLog.swift in Sources */,
 				381751742CF3B3B600DBE308 /* FeedingViewModel.swift in Sources */,
 				3817516E2CF3B2B700DBE308 /* DogProfileViewModel.swift in Sources */,
 				381751802CF3B65800DBE308 /* NotificationManager.swift in Sources */,
 				381751762CF3B4DE00DBE308 /* HygieneViewModel.swift in Sources */,
 				3817515C2CF3A9C200DBE308 /* Dog.swift in Sources */,
+				38102D382D34163A0078F80A /* WalkProgressBarView.swift in Sources */,
 				381751472CF39DB300DBE308 /* DaengDaengWeekApp.swift in Sources */,
 				381751A02CF3B9B300DBE308 /* LoadingView.swift in Sources */,
 				38102C9B2D00A2180078F80A /* Font.swift in Sources */,
@@ -456,7 +480,7 @@
 				381751822CF3B66300DBE308 /* SoundManager.swift in Sources */,
 				381751782CF3B4EC00DBE308 /* WalkingViewModel.swift in Sources */,
 				3817519E2CF3B9A200DBE308 /* DogProfileModalView.swift in Sources */,
-				38102CD42D10C6550078F80A /* ActionButton.swift in Sources */,
+				38102CD42D10C6550078F80A /* BigActionButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

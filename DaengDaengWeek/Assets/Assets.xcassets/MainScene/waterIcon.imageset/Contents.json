@@ -1,17 +1,17 @@
 {
   "images" : [
     {
-      "filename" : "affectionIcon.png",
+      "filename" : "waterIcon.png",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
-      "filename" : "affectionIcon@2x.png",
+      "filename" : "waterIcon@2x.png",
       "idiom" : "universal",
       "scale" : "2x"
     },
     {
-      "filename" : "affectionIcon@3x.png",
+      "filename" : "waterIcon@3x.png",
       "idiom" : "universal",
       "scale" : "3x"
     }

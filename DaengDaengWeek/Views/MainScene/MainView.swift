@@ -22,12 +22,14 @@ struct MainView: View {
                 .ignoresSafeArea()
             
             VStack {
-                HUDView(affectionLevel: .constant(0.3), moneyAmount: .constant(75000), backgroundColor: .clear, isHospital: false, showEncyclo: {}, popupProfile: {}, showChart: {})
+                HUDView(affectionLevel: .constant(0.5), moneyAmount: .constant(75000), backgroundColor: .clear, isHospital: false, showEncyclo: {}, popupProfile: {}, showChart: {})
                 Spacer()
-                Button("하단 버튼") {
+                HStack(spacing: 11) {
+                    BigActionButton(label: "먹이주기", icon: "feedIcon", action: {})
+                    BigActionButton(label: "위생관리", icon: "hygienicsIcon", action: {})
+                    BigActionButton(label: "애정표현", icon: "affectionIcon", action: {})
+                    BigActionButton(label: "외출하기", icon: "outIcon", action: {})
                 }
-                .buttonStyle(.borderedProminent)
-                .padding()
             }
         }
         .statusBar(hidden: true)

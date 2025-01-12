@@ -55,10 +55,19 @@ struct HUDView: View {
                         VStack(alignment: .leading) { // 마루 | 호감도
                             //Spacer().frame(height: 12)
                             
-                            Text("마루")
-                                .font(.dw(.bold, size: 18))
-                                .frame(width: 60, height: 28, alignment: .leading)
-                                .padding(.top, 8)
+//                            Text("마루")
+//                                .font(.dw(.bold, size: 18))
+//                                .frame(width: 60, height: 28, alignment: .leading)
+//                                .padding(.top, 8)
+                            OutlineTextView(text: "마루",
+                                            textColor: .dwWhite,
+                                            font: "MaplestoryOTFLight",
+                                            fontSize: 18,
+                                            strokeColor: .dwBrown00,
+                                            strokeWidth: 22)
+                            .frame(width: 60, height: 28, alignment: .leading)
+                            .offset(x: -11, y: 1)
+                            .padding(.top, 8)
                             
                             Spacer().frame(height: 0)
                             
@@ -77,7 +86,7 @@ struct HUDView: View {
                                     .frame(width: 24, height: 24)
                                     .offset(x: -10, y: -2)
                             }
-                            .padding(.leading, 10)
+                            .padding(.leading, 8)
                         }
                         
                     }

@@ -1,5 +1,5 @@
 //
-//  ActionButton.swift
+//  BigActionButton.swift
 //  DaengDaengWeek
 //
 //  Created by Jini on 12/12/24.
@@ -7,9 +7,9 @@
 
 import SwiftUI
 
-// 메인, 병원 하단의 상호작용 버튼
+// 메인, 병원 하단의 상호작용 버튼 (big)
 
-struct ActionButton: View {
+struct BigActionButton: View {
     
     var label: String
     var icon: String
@@ -47,5 +47,5 @@ struct ActionButton: View {
 }
 
 #Preview {
-    ActionButton(label: "먹이주기", icon: "feedIcon", action: {})
+    BigActionButton(label: "먹이주기", icon: "feedIcon", action: {})
 }

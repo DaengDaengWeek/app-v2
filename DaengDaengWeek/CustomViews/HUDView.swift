@@ -36,6 +36,7 @@ struct HUDView: View {
                                     .fill(Color.dwBeige00)
                                     .frame(width: 67, height: 67)
                                     .cornerRadius(12)
+                                    .clipShape(RoundedRectangle(cornerRadius: 14))
                                     .overlay(
                                         RoundedRectangle(cornerRadius: 16)
                                             .stroke(Color.dwBrown00, lineWidth: 1.5)
@@ -62,25 +63,21 @@ struct HUDView: View {
                             Spacer().frame(height: 0)
                             
                             ZStack(alignment: .leading) {
-                                
-                                ProgressView(value: affectionLevel)
-                                    .frame(width: 72, height: 14)
-                                    .scaleEffect(x: 1, y: 1.6, anchor: .center)
-                                    .background(Color(hex: "#9A9191"))
-                                    .cornerRadius(6)
-                                    .progressViewStyle(LinearProgressViewStyle(tint: Color.dwPink))
-                                    .overlay(
-                                        RoundedRectangle(cornerRadius: 6)
-                                            .stroke(Color.dwBrown00, lineWidth: 2)
-                                            .frame(width: 72, height: 12)
-                                    )
+                                AffectionProgressBarView(progress: affectionLevel,
+                                                barBackgroundColor: Color(hex: "#9A9191"),
+                                                barColor: .dwPink,
+                                                barBorderColor: .dwBrown00,
+                                                barBorderWidth: 2,
+                                                borderColor: .dwBrown00
+                                )
+                                .frame(width: 72, height: 14)
                                 
                                 Image("heartIcon") // 하트 아이콘
                                     .resizable()
                                     .frame(width: 24, height: 24)
-                                    .offset(x: -8, y: 0)
+                                    .offset(x: -10, y: -2)
                             }
-                            .padding(.leading, 6)
+                            .padding(.leading, 10)
                         }
                         
                     }
@@ -195,6 +192,6 @@ struct HUDView: View {
 }
 
 #Preview {
-    HUDView(affectionLevel:.constant(0.3), moneyAmount: .constant(0), backgroundColor: .dwPink, isHospital: false, showEncyclo: {}, popupProfile: {}, showChart: {})
+    HUDView(affectionLevel:.constant(0.5), moneyAmount: .constant(0), backgroundColor: .dwPink, isHospital: false, showEncyclo: {}, popupProfile: {}, showChart: {})
 }
 

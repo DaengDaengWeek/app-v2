@@ -59,7 +59,7 @@ struct HUDView: View {
 //                                .font(.dw(.bold, size: 18))
 //                                .frame(width: 60, height: 28, alignment: .leading)
 //                                .padding(.top, 8)
-                            OutlineTextView(text: "마루",
+                            LightOutlineTextView(text: "마루",
                                             textColor: .dwWhite,
                                             font: "MaplestoryOTFLight",
                                             fontSize: 18,

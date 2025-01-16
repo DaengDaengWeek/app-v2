@@ -8,7 +8,7 @@
 import SwiftUI
 import UIKit
 
-struct OutlineTextView: View {
+struct LightOutlineTextView: View {
     
     let text: String
     let textColor: Color
@@ -87,7 +87,7 @@ struct StrokeText: UIViewRepresentable {
 
 
 #Preview {
-    OutlineTextView(text: "마루",
+    LightOutlineTextView(text: "마루",
                     textColor: .dwWhite,
                     font: "MaplestoryOTFLight",
                     fontSize: 24,

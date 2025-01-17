@@ -39,6 +39,8 @@ extension Color {
     
     static let dwPink = Color(hex: "#FFA6EF")
     
+    static let dwDivider = Color(hex: "#C2A7A3")
+    
     static let dwWhite = Color(hex: "#FFFFFF")
     static let dwBlack = Color(hex: "#000000")
     

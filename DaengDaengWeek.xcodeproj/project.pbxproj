@@ -24,6 +24,7 @@
 		38102D3E2D3429E10078F80A /* HospitalScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38102D3D2D3429E10078F80A /* HospitalScene.swift */; };
 		38102D412D391EA30078F80A /* SettingModalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38102D402D391EA30078F80A /* SettingModalView.swift */; };
 		38102D432D392EF50078F80A /* BoldOutlineTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38102D422D392EF50078F80A /* BoldOutlineTextView.swift */; };
+		38102D452D3BE93E0078F80A /* IdentityCardModalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38102D442D3BE93E0078F80A /* IdentityCardModalView.swift */; };
 		381751472CF39DB300DBE308 /* DaengDaengWeekApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 381751462CF39DB300DBE308 /* DaengDaengWeekApp.swift */; };
 		381751492CF39DB300DBE308 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 381751482CF39DB300DBE308 /* ContentView.swift */; };
 		3817514B2CF39DB500DBE308 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3817514A2CF39DB500DBE308 /* Assets.xcassets */; };
@@ -77,6 +78,7 @@
 		38102D3D2D3429E10078F80A /* HospitalScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HospitalScene.swift; sourceTree = "<group>"; };
 		38102D402D391EA30078F80A /* SettingModalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingModalView.swift; sourceTree = "<group>"; };
 		38102D422D392EF50078F80A /* BoldOutlineTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoldOutlineTextView.swift; sourceTree = "<group>"; };
+		38102D442D3BE93E0078F80A /* IdentityCardModalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IdentityCardModalView.swift; sourceTree = "<group>"; };
 		381751432CF39DB300DBE308 /* DaengDaengWeek.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DaengDaengWeek.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		381751462CF39DB300DBE308 /* DaengDaengWeekApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DaengDaengWeekApp.swift; sourceTree = "<group>"; };
 		381751482CF39DB300DBE308 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -367,6 +369,7 @@
 				38102D3B2D341F670078F80A /* LightOutlineTextView.swift */,
 				38102D422D392EF50078F80A /* BoldOutlineTextView.swift */,
 				38102D402D391EA30078F80A /* SettingModalView.swift */,
+				38102D442D3BE93E0078F80A /* IdentityCardModalView.swift */,
 			);
 			path = CustomViews;
 			sourceTree = "<group>";
@@ -494,6 +497,7 @@
 				381751722CF3B2CC00DBE308 /* SettingsViewModel.swift in Sources */,
 				38102D432D392EF50078F80A /* BoldOutlineTextView.swift in Sources */,
 				381751822CF3B66300DBE308 /* SoundManager.swift in Sources */,
+				38102D452D3BE93E0078F80A /* IdentityCardModalView.swift in Sources */,
 				381751782CF3B4EC00DBE308 /* WalkingViewModel.swift in Sources */,
 				3817519E2CF3B9A200DBE308 /* DogProfileModalView.swift in Sources */,
 				38102CD42D10C6550078F80A /* BigActionButton.swift in Sources */,

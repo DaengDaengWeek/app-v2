@@ -25,6 +25,8 @@
 		38102D412D391EA30078F80A /* SettingModalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38102D402D391EA30078F80A /* SettingModalView.swift */; };
 		38102D432D392EF50078F80A /* BoldOutlineTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38102D422D392EF50078F80A /* BoldOutlineTextView.swift */; };
 		38102D452D3BE93E0078F80A /* IdentityCardModalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38102D442D3BE93E0078F80A /* IdentityCardModalView.swift */; };
+		38102D482D3EDC6D0078F80A /* StartScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38102D472D3EDC6D0078F80A /* StartScene.swift */; };
+		38102D4A2D3EE2840078F80A /* IndexButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38102D492D3EE2840078F80A /* IndexButton.swift */; };
 		381751472CF39DB300DBE308 /* DaengDaengWeekApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 381751462CF39DB300DBE308 /* DaengDaengWeekApp.swift */; };
 		381751492CF39DB300DBE308 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 381751482CF39DB300DBE308 /* ContentView.swift */; };
 		3817514B2CF39DB500DBE308 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3817514A2CF39DB500DBE308 /* Assets.xcassets */; };
@@ -79,6 +81,8 @@
 		38102D402D391EA30078F80A /* SettingModalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingModalView.swift; sourceTree = "<group>"; };
 		38102D422D392EF50078F80A /* BoldOutlineTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoldOutlineTextView.swift; sourceTree = "<group>"; };
 		38102D442D3BE93E0078F80A /* IdentityCardModalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IdentityCardModalView.swift; sourceTree = "<group>"; };
+		38102D472D3EDC6D0078F80A /* StartScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartScene.swift; sourceTree = "<group>"; };
+		38102D492D3EE2840078F80A /* IndexButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IndexButton.swift; sourceTree = "<group>"; };
 		381751432CF39DB300DBE308 /* DaengDaengWeek.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DaengDaengWeek.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		381751462CF39DB300DBE308 /* DaengDaengWeekApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DaengDaengWeekApp.swift; sourceTree = "<group>"; };
 		381751482CF39DB300DBE308 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -298,6 +302,7 @@
 			isa = PBXGroup;
 			children = (
 				3817518D2CF3B88E00DBE308 /* StartView.swift */,
+				38102D472D3EDC6D0078F80A /* StartScene.swift */,
 				3817518F2CF3B90D00DBE308 /* PledgeModalView.swift */,
 			);
 			path = StartScene;
@@ -363,6 +368,7 @@
 				38102CD32D10C6550078F80A /* BigActionButton.swift */,
 				38102D312D3409F50078F80A /* SmallActionButton.swift */,
 				38102D332D340B570078F80A /* HomeButton.swift */,
+				38102D492D3EE2840078F80A /* IndexButton.swift */,
 				38102D352D340CA50078F80A /* WalkProgressView.swift */,
 				38102D372D34163A0078F80A /* WalkProgressBarView.swift */,
 				38102D392D341C9D0078F80A /* AffectionProgressBarView.swift */,
@@ -467,6 +473,7 @@
 				381751492CF39DB300DBE308 /* ContentView.swift in Sources */,
 				38102CD22D10BC9B0078F80A /* HUDView.swift in Sources */,
 				381751842CF3B6FB00DBE308 /* AnimationManager.swift in Sources */,
+				38102D482D3EDC6D0078F80A /* StartScene.swift in Sources */,
 				3817517E2CF3B5CF00DBE308 /* CoreDataManager.swift in Sources */,
 				38102D3A2D341C9D0078F80A /* AffectionProgressBarView.swift in Sources */,
 				3817518E2CF3B88E00DBE308 /* StartView.swift in Sources */,
@@ -486,6 +493,7 @@
 				381751742CF3B3B600DBE308 /* FeedingViewModel.swift in Sources */,
 				3817516E2CF3B2B700DBE308 /* DogProfileViewModel.swift in Sources */,
 				381751802CF3B65800DBE308 /* NotificationManager.swift in Sources */,
+				38102D4A2D3EE2840078F80A /* IndexButton.swift in Sources */,
 				381751762CF3B4DE00DBE308 /* HygieneViewModel.swift in Sources */,
 				3817515C2CF3A9C200DBE308 /* Dog.swift in Sources */,
 				38102D382D34163A0078F80A /* WalkProgressBarView.swift in Sources */,

@@ -5,6 +5,25 @@
 //  Created by Jini on 11/25/24.
 //
 
-import Foundation
+import SwiftUI
+import SpriteKit
 
-// 시작 화면
+struct StartView: View {
+    var scene: SKScene {
+        let scene = StartScene()
+        scene.size = UIScreen.main.bounds.size
+        scene.scaleMode = .resizeFill
+        return scene
+    }
+    
+    var body: some View {
+        ZStack {
+            
+        }
+        .statusBar(hidden: true)
+    }
+}
+
+#Preview {
+    StartView()
+}

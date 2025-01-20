@@ -11,8 +11,13 @@ struct PledgeModalView: View {
     
     //@Binding var isPresented: Bool
     @State var name: String = "마루"
+    @State var selectedBreed: String = "말티즈"
     @State var selectedGender = "성별을 선택해주세요"
-    var gender = ["여", "남"]
+    
+    let breeds = ["말티즈", "푸들"]
+    let breedsImg = ["malteseImg", "poodleImg"]
+    let gender = ["여", "남"]
+    
     
     var body: some View {
         
@@ -55,14 +60,13 @@ struct PledgeModalView: View {
                         .font(.dw(.bold, size: 15))
                         .foregroundColor(.dwBrown00)
                     
-                    
                     ZStack {
                         Rectangle()
                             .fill(Color.dwWhite)
                             .frame(width: 208, height: 44)
                             .cornerRadius(8)
                         
-                        TextField("", text: $name)
+                        TextField("이름을 입력해주세요", text: $name)
                             .font(.dw(.light, size: 16))
                             .frame(width: 188, height: 44)
                             .padding(.horizontal, 10)
@@ -77,17 +81,45 @@ struct PledgeModalView: View {
                         .foregroundColor(.dwBrown00)
                         .offset(x: 0, y: -35)
                     
-                    
                     ZStack {
                         Rectangle()
                             .fill(Color.dwWhite)
                             .frame(width: 208, height: 112)
                             .cornerRadius(8)
                         
-                        Text("")
-                            .font(.dw(.light, size: 16))
-                            .frame(width: 188, height: 44, alignment: .leading)
-                            .padding(.horizontal, 10)
+                        // 견종 선택
+                        HStack(spacing: 6) {
+                            ForEach(breeds, id: \.self) { breed in
+                                Button(action: {
+                                    selectedBreed = breed
+                                }) {
+                                    VStack {
+                                        Image(breedsImg[breeds.firstIndex(of: breed)!])
+                                            .resizable()
+                                            .scaledToFit()
+                                            .frame(width: 79, height: 73)
+                                            .offset(x: 0, y: 4)
+                                        
+                                        Text(breed)
+                                            .font(.dw(.light, size: 12))
+                                            .foregroundColor(Color.dwBlack)
+                                            .offset(x: 0, y: -5)
+                                            
+                                    }
+                                    
+                                       
+                                }
+                                .frame(width: 91, height: 90)
+                                .background(Color.dwWhite)
+                                .overlay(
+                                    RoundedRectangle(cornerRadius: 8)
+                                        .stroke(selectedBreed == breed ? Color.dwBrown00 : Color(hex: "#C4C4C7"), lineWidth: 1)
+                                )
+                                .padding(.vertical, -6)
+                                .opacity(selectedBreed == breed ? 1.0 : 0.5)
+                            }
+                        }
+
                     }
                 }
                 
@@ -104,11 +136,7 @@ struct PledgeModalView: View {
                             .frame(width: 208, height: 44)
                             .cornerRadius(8)
                         
-//                        Text("여")
-//                            .font(.dw(.light, size: 16))
-//                            .frame(width: 188, height: 44, alignment: .leading)
-//                            .padding(.horizontal, 10)
-                        
+                        // 선택 picker
                         Menu {
                             ForEach(gender, id: \.self) { item in
                                 Button(action: {
@@ -161,14 +189,15 @@ struct PledgeModalView: View {
                 // 공백
                 Spacer().frame(height: 15)
                 
-                // 서약 문구 (자간 설정 필요)
+                // 서약 문구
                 Text("위 반려견과 주인의 행복을 위하여 일주일 동안 열심히 마루를 알아가겠습니다.")
                     .font(.dw(.light, size: 20))
                     .foregroundColor(.dwBrown00)
                     .padding(.horizontal, 23)
                     .frame(width: 283, height: 90)
                     .multilineTextAlignment(.center)
-                
+                    .kerning(0.4) // 자간
+                    .lineSpacing(6) // 행간
                 
                 // 공백
                 Spacer().frame(height: 10)

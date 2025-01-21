@@ -27,6 +27,7 @@
 		38102D452D3BE93E0078F80A /* IdentityCardModalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38102D442D3BE93E0078F80A /* IdentityCardModalView.swift */; };
 		38102D482D3EDC6D0078F80A /* StartScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38102D472D3EDC6D0078F80A /* StartScene.swift */; };
 		38102D4A2D3EE2840078F80A /* IndexButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38102D492D3EE2840078F80A /* IndexButton.swift */; };
+		38102D4C2D3EF0C80078F80A /* NotificationModalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38102D4B2D3EF0C80078F80A /* NotificationModalView.swift */; };
 		381751472CF39DB300DBE308 /* DaengDaengWeekApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 381751462CF39DB300DBE308 /* DaengDaengWeekApp.swift */; };
 		381751492CF39DB300DBE308 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 381751482CF39DB300DBE308 /* ContentView.swift */; };
 		3817514B2CF39DB500DBE308 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3817514A2CF39DB500DBE308 /* Assets.xcassets */; };
@@ -83,6 +84,7 @@
 		38102D442D3BE93E0078F80A /* IdentityCardModalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IdentityCardModalView.swift; sourceTree = "<group>"; };
 		38102D472D3EDC6D0078F80A /* StartScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartScene.swift; sourceTree = "<group>"; };
 		38102D492D3EE2840078F80A /* IndexButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IndexButton.swift; sourceTree = "<group>"; };
+		38102D4B2D3EF0C80078F80A /* NotificationModalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationModalView.swift; sourceTree = "<group>"; };
 		381751432CF39DB300DBE308 /* DaengDaengWeek.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DaengDaengWeek.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		381751462CF39DB300DBE308 /* DaengDaengWeekApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DaengDaengWeekApp.swift; sourceTree = "<group>"; };
 		381751482CF39DB300DBE308 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -375,6 +377,7 @@
 				38102D3B2D341F670078F80A /* LightOutlineTextView.swift */,
 				38102D422D392EF50078F80A /* BoldOutlineTextView.swift */,
 				38102D402D391EA30078F80A /* SettingModalView.swift */,
+				38102D4B2D3EF0C80078F80A /* NotificationModalView.swift */,
 				38102D442D3BE93E0078F80A /* IdentityCardModalView.swift */,
 			);
 			path = CustomViews;
@@ -467,6 +470,7 @@
 				3817519C2CF3B99300DBE308 /* EncyclopediaModalView.swift in Sources */,
 				38102D3C2D341F670078F80A /* LightOutlineTextView.swift in Sources */,
 				381751532CF39DB500DBE308 /* DaengDaengWeek.xcdatamodeld in Sources */,
+				38102D4C2D3EF0C80078F80A /* NotificationModalView.swift in Sources */,
 				3817517A2CF3B50C00DBE308 /* HealthViewModel.swift in Sources */,
 				38102C9D2D00A2870078F80A /* Color.swift in Sources */,
 				3817519A2CF3B98500DBE308 /* MedicalChartModalView.swift in Sources */,

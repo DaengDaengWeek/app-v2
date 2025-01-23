@@ -201,6 +201,6 @@ struct HUDView: View {
 }
 
 #Preview {
-    HUDView(affectionLevel:.constant(0.5), moneyAmount: .constant(0), backgroundColor: .dwPink, isHospital: false, showEncyclo: {}, popupProfile: {}, showChart: {})
+    HUDView(affectionLevel:.constant(0.5), moneyAmount: .constant(0), backgroundColor: .clear, isHospital: false, showEncyclo: {}, popupProfile: {}, showChart: {})
 }
 

@@ -48,6 +48,7 @@ struct SettingModalView: View {
                         .font(.dw(.light, size: 16))
                         .foregroundColor(.dwBrown00)
                         .padding(.leading, 10)
+                        .frame(width: 20)
                     
                     Slider(
                         value: $backgroundSoundValue,
@@ -74,6 +75,7 @@ struct SettingModalView: View {
                         .font(.dw(.light, size: 16))
                         .foregroundColor(.dwBrown00)
                         .padding(.leading, 12)
+                        .frame(width: 22)
                     
                     Slider(
                         value: $effectSoundValue,

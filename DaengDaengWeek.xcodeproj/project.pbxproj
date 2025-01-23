@@ -28,6 +28,7 @@
 		38102D482D3EDC6D0078F80A /* StartScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38102D472D3EDC6D0078F80A /* StartScene.swift */; };
 		38102D4A2D3EE2840078F80A /* IndexButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38102D492D3EE2840078F80A /* IndexButton.swift */; };
 		38102D4C2D3EF0C80078F80A /* NotificationModalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38102D4B2D3EF0C80078F80A /* NotificationModalView.swift */; };
+		38102D4E2D4016370078F80A /* SoundSliderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38102D4D2D4016370078F80A /* SoundSliderView.swift */; };
 		381751472CF39DB300DBE308 /* DaengDaengWeekApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 381751462CF39DB300DBE308 /* DaengDaengWeekApp.swift */; };
 		381751492CF39DB300DBE308 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 381751482CF39DB300DBE308 /* ContentView.swift */; };
 		3817514B2CF39DB500DBE308 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3817514A2CF39DB500DBE308 /* Assets.xcassets */; };
@@ -85,6 +86,7 @@
 		38102D472D3EDC6D0078F80A /* StartScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartScene.swift; sourceTree = "<group>"; };
 		38102D492D3EE2840078F80A /* IndexButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IndexButton.swift; sourceTree = "<group>"; };
 		38102D4B2D3EF0C80078F80A /* NotificationModalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationModalView.swift; sourceTree = "<group>"; };
+		38102D4D2D4016370078F80A /* SoundSliderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundSliderView.swift; sourceTree = "<group>"; };
 		381751432CF39DB300DBE308 /* DaengDaengWeek.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DaengDaengWeek.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		381751462CF39DB300DBE308 /* DaengDaengWeekApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DaengDaengWeekApp.swift; sourceTree = "<group>"; };
 		381751482CF39DB300DBE308 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -374,6 +376,7 @@
 				38102D352D340CA50078F80A /* WalkProgressView.swift */,
 				38102D372D34163A0078F80A /* WalkProgressBarView.swift */,
 				38102D392D341C9D0078F80A /* AffectionProgressBarView.swift */,
+				38102D4D2D4016370078F80A /* SoundSliderView.swift */,
 				38102D3B2D341F670078F80A /* LightOutlineTextView.swift */,
 				38102D422D392EF50078F80A /* BoldOutlineTextView.swift */,
 				38102D402D391EA30078F80A /* SettingModalView.swift */,
@@ -493,6 +496,7 @@
 				381751962CF3B96A00DBE308 /* WalkLogModalView.swift in Sources */,
 				38102D322D3409F50078F80A /* SmallActionButton.swift in Sources */,
 				38102D302D3407550078F80A /* WalkScene.swift in Sources */,
+				38102D4E2D4016370078F80A /* SoundSliderView.swift in Sources */,
 				381751602CF3AA0D00DBE308 /* WalkLog.swift in Sources */,
 				381751742CF3B3B600DBE308 /* FeedingViewModel.swift in Sources */,
 				3817516E2CF3B2B700DBE308 /* DogProfileViewModel.swift in Sources */,

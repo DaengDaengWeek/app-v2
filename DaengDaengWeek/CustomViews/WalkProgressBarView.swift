@@ -23,7 +23,6 @@ struct WalkProgressBarView: View {
                     .fill(barBackgroundColor)
                     .frame(height: geometry.size.height)
 
-
                 // Progress Bar
                 RoundedRectangle(cornerRadius: 30)
                     .fill(barColor)

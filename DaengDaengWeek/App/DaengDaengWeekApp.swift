@@ -13,7 +13,7 @@ struct DaengDaengWeekApp: App {
 
     var body: some Scene {
         WindowGroup {
-            MainView()
+            WalkView()
                 .environment(\.managedObjectContext, persistenceController.container.viewContext)
         }
     }

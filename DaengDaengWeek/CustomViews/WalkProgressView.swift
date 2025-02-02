@@ -47,11 +47,18 @@ struct WalkProgressView: View {
                         .frame(width: 80, alignment: .leading)
                         //.padding(.leading, 18)
                     
-                    Text("12분")
+                    Text("00 : 52")
                         .font(.dw(.bold, size: 32))
                         .foregroundColor(.dwBrown00)
-                        .padding(.leading, 45)
-                        .padding(.trailing, 65)
+                        .frame(width: 150, alignment: .center)
+                        .padding(.leading, 2)
+                        .padding(.trailing, 18)
+//                    Text("00분 52초")
+//                        .font(.dw(.bold, size: 32))
+//                        .foregroundColor(.dwBrown00)
+//                        .frame(width: 150, alignment: .center)
+//                        .padding(.leading, 2)
+//                        .padding(.trailing, 14)
                     
                     Text("총 15분")
                         .font(.dw(.light, size: 16))
@@ -69,5 +76,5 @@ struct WalkProgressView: View {
 }
 
 #Preview {
-    WalkProgressView(action: {})
+    WalkView()
 }

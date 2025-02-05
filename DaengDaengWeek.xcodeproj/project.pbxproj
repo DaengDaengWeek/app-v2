@@ -29,6 +29,8 @@
 		38102D4A2D3EE2840078F80A /* IndexButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38102D492D3EE2840078F80A /* IndexButton.swift */; };
 		38102D4C2D3EF0C80078F80A /* NotificationModalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38102D4B2D3EF0C80078F80A /* NotificationModalView.swift */; };
 		38102D4E2D4016370078F80A /* SoundSliderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38102D4D2D4016370078F80A /* SoundSliderView.swift */; };
+		38102D552D5359730078F80A /* WalkStartModalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38102D542D5359730078F80A /* WalkStartModalView.swift */; };
+		38102D572D535B5C0078F80A /* WalkTimerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38102D562D535B5C0078F80A /* WalkTimerView.swift */; };
 		381751472CF39DB300DBE308 /* DaengDaengWeekApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 381751462CF39DB300DBE308 /* DaengDaengWeekApp.swift */; };
 		381751492CF39DB300DBE308 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 381751482CF39DB300DBE308 /* ContentView.swift */; };
 		3817514B2CF39DB500DBE308 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3817514A2CF39DB500DBE308 /* Assets.xcassets */; };
@@ -87,6 +89,8 @@
 		38102D492D3EE2840078F80A /* IndexButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IndexButton.swift; sourceTree = "<group>"; };
 		38102D4B2D3EF0C80078F80A /* NotificationModalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationModalView.swift; sourceTree = "<group>"; };
 		38102D4D2D4016370078F80A /* SoundSliderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundSliderView.swift; sourceTree = "<group>"; };
+		38102D542D5359730078F80A /* WalkStartModalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalkStartModalView.swift; sourceTree = "<group>"; };
+		38102D562D535B5C0078F80A /* WalkTimerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalkTimerView.swift; sourceTree = "<group>"; };
 		381751432CF39DB300DBE308 /* DaengDaengWeek.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DaengDaengWeek.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		381751462CF39DB300DBE308 /* DaengDaengWeekApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DaengDaengWeekApp.swift; sourceTree = "<group>"; };
 		381751482CF39DB300DBE308 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -352,6 +356,7 @@
 				381751932CF3B95700DBE308 /* WalkView.swift */,
 				38102D2F2D3407550078F80A /* WalkScene.swift */,
 				381751952CF3B96A00DBE308 /* WalkLogModalView.swift */,
+				38102D542D5359730078F80A /* WalkStartModalView.swift */,
 			);
 			path = ParkScene;
 			sourceTree = "<group>";
@@ -382,6 +387,7 @@
 				38102D402D391EA30078F80A /* SettingModalView.swift */,
 				38102D4B2D3EF0C80078F80A /* NotificationModalView.swift */,
 				38102D442D3BE93E0078F80A /* IdentityCardModalView.swift */,
+				38102D562D535B5C0078F80A /* WalkTimerView.swift */,
 			);
 			path = CustomViews;
 			sourceTree = "<group>";
@@ -480,6 +486,7 @@
 				381751492CF39DB300DBE308 /* ContentView.swift in Sources */,
 				38102CD22D10BC9B0078F80A /* HUDView.swift in Sources */,
 				381751842CF3B6FB00DBE308 /* AnimationManager.swift in Sources */,
+				38102D572D535B5C0078F80A /* WalkTimerView.swift in Sources */,
 				38102D482D3EDC6D0078F80A /* StartScene.swift in Sources */,
 				3817517E2CF3B5CF00DBE308 /* CoreDataManager.swift in Sources */,
 				38102D3A2D341C9D0078F80A /* AffectionProgressBarView.swift in Sources */,
@@ -512,6 +519,7 @@
 				381751922CF3B92700DBE308 /* MainView.swift in Sources */,
 				381751722CF3B2CC00DBE308 /* SettingsViewModel.swift in Sources */,
 				38102D432D392EF50078F80A /* BoldOutlineTextView.swift in Sources */,
+				38102D552D5359730078F80A /* WalkStartModalView.swift in Sources */,
 				381751822CF3B66300DBE308 /* SoundManager.swift in Sources */,
 				38102D452D3BE93E0078F80A /* IdentityCardModalView.swift in Sources */,
 				381751782CF3B4EC00DBE308 /* WalkingViewModel.swift in Sources */,

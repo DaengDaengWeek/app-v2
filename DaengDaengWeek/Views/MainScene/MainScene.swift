@@ -14,7 +14,7 @@ class MainScene: SKScene {
     }
     
     private func setupScene() {
-        let background = SKSpriteNode(imageNamed: "main_bg")
+        let background = SKSpriteNode(imageNamed: "home_bg")
         background.position = CGPoint(x: size.width / 2, y: size.height / 2) // 중앙에 배치
         background.size = size
         background.zPosition = -1 // 다른 노드들 뒤에 배치

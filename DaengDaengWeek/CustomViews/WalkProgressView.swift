@@ -40,7 +40,8 @@ struct WalkProgressView: View {
                 
                 // 걸음 | 현재 소요시간 | 총 시간
                 HStack {
-                    Spacer().frame(width: 17)
+                    Spacer().frame(width: 18)
+                    
                     Text("1185 걸음")
                         .font(.dw(.light, size: 16))
                         .foregroundColor(.dwBrown00)
@@ -53,8 +54,9 @@ struct WalkProgressView: View {
                         .font(.dw(.light, size: 16))
                         .foregroundColor(.dwBrown00)
                         .frame(width: 48, alignment: .center)
-                        //.padding(.trailing, 18)
-                    Spacer().frame(width: 18)
+                        .padding(.leading, 18)
+                    
+                    Spacer().frame(width: 20)
                 }
             }
             

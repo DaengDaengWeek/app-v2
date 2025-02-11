@@ -13,35 +13,35 @@ struct WalkTimerView: View {
     @ObservedObject var walkTimer = WalkTimer()
     
     var body: some View {
-        HStack(spacing: 0) {
-//            Text("\(String(format: "%02d", walkTimer.minute))")
-//                .font(.dw(.bold, size: 32))
-//                .foregroundColor(.dwBrown00)
-//                .frame(width: 55, alignment: .center)
-//                .padding(.leading, 10)
-//            
-//            Text(":")
-//                .font(.dw(.bold, size: 32))
-//                .foregroundColor(.dwBrown00)
-//                .frame(width: 8, alignment: .center)
-//            
-//            Text("\(String(format: "%02d", walkTimer.second))")
-//                .font(.dw(.bold, size: 32))
-//                .foregroundColor(.dwBrown00)
-//                .frame(width: 55, alignment: .center)
-//                .padding(.trailing, 20)
-            
-            Text("\(String(format: "%02d", walkTimer.minute))분")
+        HStack(spacing: 2) {
+            Text("\(String(format: "%02d", walkTimer.minute))")
                 .font(.dw(.bold, size: 32))
                 .foregroundColor(.dwBrown00)
-                .frame(width: 75, alignment: .center)
-                .padding(.leading, 0)
+                .frame(width: 55, alignment: .center)
+                .padding(.leading, 10)
             
-            Text("\(String(format: "%02d", walkTimer.second))초")
+            Text(":")
                 .font(.dw(.bold, size: 32))
                 .foregroundColor(.dwBrown00)
-                .frame(width: 75, alignment: .center)
-                .padding(.trailing, 12)
+                .frame(width: 8, alignment: .center)
+            
+            Text("\(String(format: "%02d", walkTimer.second))")
+                .font(.dw(.bold, size: 32))
+                .foregroundColor(.dwBrown00)
+                .frame(width: 55, alignment: .center)
+                .padding(.trailing, 10)
+            
+//            Text("\(String(format: "%02d", walkTimer.minute))분")
+//                .font(.dw(.bold, size: 32))
+//                .foregroundColor(.dwBrown00)
+//                .frame(width: 75, alignment: .center)
+//                .padding(.leading, 0)
+//            
+//            Text("\(String(format: "%02d", walkTimer.second))초")
+//                .font(.dw(.bold, size: 32))
+//                .foregroundColor(.dwBrown00)
+//                .frame(width: 75, alignment: .center)
+//                .padding(.trailing, 12)
         }
     }
     

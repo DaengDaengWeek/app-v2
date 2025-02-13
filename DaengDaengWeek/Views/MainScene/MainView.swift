@@ -9,6 +9,8 @@ import SwiftUI
 import SpriteKit
 
 struct MainView: View {
+    var onNavigate: (ContentView.Screen) -> Void
+    
     var scene: SKScene {
         let scene = MainScene()
         scene.size = UIScreen.main.bounds.size
@@ -28,7 +30,7 @@ struct MainView: View {
                     BigActionButton(label: "먹이주기", icon: "feedIcon", action: {})
                     BigActionButton(label: "위생관리", icon: "hygienicsIcon", action: {})
                     BigActionButton(label: "애정표현", icon: "affectionIcon", action: {})
-                    BigActionButton(label: "외출하기", icon: "outIcon", action: {})
+                    BigActionButton(label: "외출하기", icon: "outIcon", action: { onNavigate(.walk) })
                 }
             }
         }
@@ -37,5 +39,5 @@ struct MainView: View {
 }
 
 #Preview {
-    MainView()
+    MainView(onNavigate: {_ in })
 }

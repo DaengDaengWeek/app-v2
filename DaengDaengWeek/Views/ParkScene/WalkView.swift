@@ -11,6 +11,8 @@ import SpriteKit
 // 산책 화면
 
 struct WalkView: View {
+    var onHome: () -> Void
+    
     var scene: SKScene {
         let scene = WalkScene()
         scene.size = UIScreen.main.bounds.size
@@ -30,7 +32,7 @@ struct WalkView: View {
                     Spacer()
                     HStack {
                         Spacer()
-                        HomeButton(action: {})
+                        HomeButton(action: onHome)
                             .padding(.trailing, 16)
                     }
                     WalkProgressView(action: {})
@@ -43,5 +45,5 @@ struct WalkView: View {
 }
 
 #Preview {
-    WalkView()
+    WalkView(onHome: {})
 }

@@ -67,5 +67,5 @@ struct WalkProgressView: View {
 }
 
 #Preview {
-    WalkView()
+    WalkView(onHome: {})
 }

@@ -49,7 +49,7 @@ struct WalkTimerView: View {
 }
 
 #Preview {
-    WalkView()
+    WalkView(onHome: {})
 }
 
 class WalkTimer: ObservableObject {

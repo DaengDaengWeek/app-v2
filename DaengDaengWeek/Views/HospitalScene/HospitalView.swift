@@ -9,6 +9,8 @@ import SwiftUI
 import SpriteKit
 
 struct HospitalView: View {
+    var onHome: () -> Void
+    
     var scene: SKScene {
         let scene = HospitalScene()
         scene.size = UIScreen.main.bounds.size
@@ -37,5 +39,5 @@ struct HospitalView: View {
 }
 
 #Preview {
-    HospitalView()
+    HospitalView(onHome: {})
 }

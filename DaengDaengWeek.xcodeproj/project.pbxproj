@@ -31,6 +31,8 @@
 		38102D4E2D4016370078F80A /* SoundSliderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38102D4D2D4016370078F80A /* SoundSliderView.swift */; };
 		38102D552D5359730078F80A /* WalkStartModalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38102D542D5359730078F80A /* WalkStartModalView.swift */; };
 		38102D572D535B5C0078F80A /* WalkTimerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38102D562D535B5C0078F80A /* WalkTimerView.swift */; };
+		38102D5A2D93BF7E0078F80A /* WalkDog.gif in Resources */ = {isa = PBXBuildFile; fileRef = 38102D592D93BF7E0078F80A /* WalkDog.gif */; };
+		38102D5D2D93FCC00078F80A /* SDWebImageSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = 38102D5C2D93FCC00078F80A /* SDWebImageSwiftUI */; };
 		381751472CF39DB300DBE308 /* DaengDaengWeekApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 381751462CF39DB300DBE308 /* DaengDaengWeekApp.swift */; };
 		381751492CF39DB300DBE308 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 381751482CF39DB300DBE308 /* ContentView.swift */; };
 		3817514B2CF39DB500DBE308 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3817514A2CF39DB500DBE308 /* Assets.xcassets */; };
@@ -91,6 +93,7 @@
 		38102D4D2D4016370078F80A /* SoundSliderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundSliderView.swift; sourceTree = "<group>"; };
 		38102D542D5359730078F80A /* WalkStartModalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalkStartModalView.swift; sourceTree = "<group>"; };
 		38102D562D535B5C0078F80A /* WalkTimerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalkTimerView.swift; sourceTree = "<group>"; };
+		38102D592D93BF7E0078F80A /* WalkDog.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = WalkDog.gif; sourceTree = "<group>"; };
 		381751432CF39DB300DBE308 /* DaengDaengWeek.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DaengDaengWeek.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		381751462CF39DB300DBE308 /* DaengDaengWeekApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DaengDaengWeekApp.swift; sourceTree = "<group>"; };
 		381751482CF39DB300DBE308 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -131,6 +134,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				38102D5D2D93FCC00078F80A /* SDWebImageSwiftUI in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -253,6 +257,7 @@
 		381751692CF3AB2A00DBE308 /* Dog */ = {
 			isa = PBXGroup;
 			children = (
+				38102D592D93BF7E0078F80A /* WalkDog.gif */,
 			);
 			path = Dog;
 			sourceTree = "<group>";
@@ -417,6 +422,9 @@
 			dependencies = (
 			);
 			name = DaengDaengWeek;
+			packageProductDependencies = (
+				38102D5C2D93FCC00078F80A /* SDWebImageSwiftUI */,
+			);
 			productName = DaengDaengWeek;
 			productReference = 381751432CF39DB300DBE308 /* DaengDaengWeek.app */;
 			productType = "com.apple.product-type.application";
@@ -445,6 +453,9 @@
 				Base,
 			);
 			mainGroup = 3817513A2CF39DB300DBE308;
+			packageReferences = (
+				38102D5B2D93FCC00078F80A /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */,
+			);
 			productRefGroup = 381751442CF39DB300DBE308 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -460,6 +471,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				38102CA32D00A4790078F80A /* Maplestory OTF Light.otf in Resources */,
+				38102D5A2D93BF7E0078F80A /* WalkDog.gif in Resources */,
 				38102CA22D00A4760078F80A /* Maplestory OTF Bold.otf in Resources */,
 				3817514E2CF39DB500DBE308 /* Preview Assets.xcassets in Resources */,
 				3817514B2CF39DB500DBE308 /* Assets.xcassets in Resources */,
@@ -658,6 +670,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"DaengDaengWeek/Preview Content\"";
+				DEVELOPMENT_TEAM = RW3T7BP2JK;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = DaengDaengWeek/Info.plist;
@@ -688,6 +701,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"DaengDaengWeek/Preview Content\"";
+				DEVELOPMENT_TEAM = RW3T7BP2JK;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = DaengDaengWeek/Info.plist;
@@ -732,6 +746,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		38102D5B2D93FCC00078F80A /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SDWebImage/SDWebImageSwiftUI.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 3.1.3;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		38102D5C2D93FCC00078F80A /* SDWebImageSwiftUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 38102D5B2D93FCC00078F80A /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */;
+			productName = SDWebImageSwiftUI;
+		};
+/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		381751512CF39DB500DBE308 /* DaengDaengWeek.xcdatamodeld */ = {

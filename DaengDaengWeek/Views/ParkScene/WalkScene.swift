@@ -12,10 +12,13 @@ class WalkScene: SKScene {
     var background1: SKSpriteNode!
     var background2: SKSpriteNode!
     
+    var dog: SKSpriteNode!
+    
     let backgroundSpeed: CGFloat = 2.0
     
     override func didMove(to view: SKView) {
         setupScene()
+        startDogAnimation()
     }
     
     private func setupScene() {
@@ -26,9 +29,27 @@ class WalkScene: SKScene {
         background2 = SKSpriteNode(imageNamed: "walk_bg")
         background2.anchorPoint = CGPoint(x: 0, y: 0.5)
         background2.position = CGPoint(x: background1.size.width, y: size.height / 2)
+        
+        dog = SKSpriteNode(imageNamed: "WalkDog1")
+        dog.size = CGSize(width: 494, height: 247)
+        dog.position = CGPoint(x: size.width * 0.2, y: size.height * 0.45)
 
         addChild(background1)
         addChild(background2)
+        addChild(dog)
+    }
+    
+    private func startDogAnimation() {
+        var textures: [SKTexture] = []
+        
+        for i in 1...6 {
+            textures.append(SKTexture(imageNamed: "WalkDog\(i)"))
+        }
+        
+        let animationAction = SKAction.animate(with: textures, timePerFrame: 0.18)
+        let repeatAction = SKAction.repeatForever(animationAction)
+        
+        dog.run(repeatAction)
     }
     
     override func update(_ currentTime: TimeInterval) {

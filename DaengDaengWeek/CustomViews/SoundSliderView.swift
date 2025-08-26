@@ -36,7 +36,7 @@ struct SoundSliderView: View {
 
 #Preview {
     SoundSliderView(
-        value: .constant(5),
+        value: .constant(4),
         range: 0...5,
         step: 1,
         accentColor: .dwMint00,

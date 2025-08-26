@@ -120,18 +120,39 @@ struct SettingModalView: View {
                 HStack {
                     Spacer()
                     
-                    //시작시간&종료시간
-                    VStack(spacing: 8) {
-                        Text("오후 11시 ~")
+                    //시작시간 & 종료시간
+                    VStack(spacing: 2) {
+                        // Button
+                        HStack {
+                            Text("오후 11시 ~")
                             .font(.dw(.light, size: 14))
-                            .foregroundColor(.dwGray00)
-                            .frame(width: 130, alignment: .leading)
+                            .foregroundColor(Color(hex: "#B2AEAE"))
+                            .frame(width: 62, alignment: .leading)
+                            
+                            Spacer().frame(width: 55)
+                            
+                            Image("disclsoureIcon_disabled")
+                                .resizable()
+                                .frame(width: 14, height: 24)
+                        }
                         
-                        Text("오전 7시")
-                            .font(.dw(.light, size: 14))
-                            .foregroundColor(.dwGray00)
-                            .frame(width: 130, alignment: .leading)
+                        // Button
+                        HStack {
+                            Text("오전 7시")
+                                .font(.dw(.light, size: 14))
+                                .foregroundColor(Color(hex: "#B2AEAE"))
+                                .frame(width: 62, alignment: .leading)
+                            
+                            Spacer().frame(width: 55)
+                            
+                            Image("disclsoureIcon_disabled")
+                                .resizable()
+                                .frame(width: 14, height: 24)
+                        }
+                        
+
                     }
+                    .frame(width: 136)
                 }
                 .padding(.horizontal, 30)
                 
@@ -139,16 +160,58 @@ struct SettingModalView: View {
                 Spacer().frame(height: 24)
                 
                 
+//                // 개인정보보호정책 | 이용약관 초기화 HStack
+//                HStack {
+//                    Button(action: {}) {
+//                        ZStack {
+//                            Text("개인정보보호정책  |  이용약관")
+//                                .font(.dw(.light, size: 14))
+//                                .foregroundColor(.dwBrown00)
+//                        }
+//                    }
+//                    .frame(width: 165, height: 30)
+//                    
+//                    Spacer().frame(width: 30)
+//                    
+//                    Button(action: {}) {
+//                        ZStack {
+//                            Color.dwBrown10
+//                                .clipShape(RoundedRectangle(cornerRadius: 8))
+//                            
+//                            Text("초기화")
+//                                .font(.dw(.light, size: 15))
+//                                .foregroundColor(.dwWhite)
+//                        }
+//                    }
+//                    .frame(width: 76, height: 30)
+//                }
+//                .padding(.leading, 30)
+//                .padding(.trailing, 30)
+                
                 // 개인정보보호정책 | 이용약관 초기화 HStack
                 HStack {
                     Button(action: {}) {
                         ZStack {
-                            Text("개인정보보호정책  |  이용약관")
+                            Text("개인정보보호정책")
                                 .font(.dw(.light, size: 14))
                                 .foregroundColor(.dwBrown00)
                         }
                     }
-                    .frame(width: 165, height: 30)
+                    .frame(width: 100, height: 30)
+                    
+                    Text("|")
+                        .font(.dw(.light, size: 14))
+                        .foregroundColor(.dwBrown00)
+                        .frame(width: 3)
+                    
+                    Button(action: {}) {
+                        ZStack {
+                            Text("이용약관")
+                                .font(.dw(.light, size: 14))
+                                .foregroundColor(.dwBrown00)
+                        }
+                    }
+                    .frame(width: 60, height: 30)
                     
                     Spacer().frame(width: 30)
                     

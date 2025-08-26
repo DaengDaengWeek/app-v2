@@ -25,10 +25,12 @@ class WalkScene: SKScene {
         background1 = SKSpriteNode(imageNamed: "walk_bg")
         background1.anchorPoint = CGPoint(x: 0, y: 0.5)
         background1.position = CGPoint(x: 0, y: size.height / 2)
+        background1.size = size //배경 화면에 꽉 차게 조정
 
         background2 = SKSpriteNode(imageNamed: "walk_bg")
         background2.anchorPoint = CGPoint(x: 0, y: 0.5)
         background2.position = CGPoint(x: background1.size.width, y: size.height / 2)
+        background2.size = size //배경 화면에 꽉 차게 조정
         
         dog = SKSpriteNode(imageNamed: "WalkDog1")
         dog.size = CGSize(width: 494, height: 247)

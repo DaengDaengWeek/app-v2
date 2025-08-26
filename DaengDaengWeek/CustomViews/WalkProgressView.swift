@@ -9,6 +9,7 @@ import SwiftUI
 
 struct WalkProgressView: View {
     
+    var walkCnt: Int = 0
     var action: () -> Void
     
     var body: some View {
@@ -42,7 +43,7 @@ struct WalkProgressView: View {
                 HStack {
                     Spacer().frame(width: 18)
                     
-                    Text("1185 걸음")
+                    Text("\(walkCnt) 걸음")
                         .font(.dw(.light, size: 16))
                         .foregroundColor(.dwBrown00)
                         .frame(width: 80, alignment: .leading)

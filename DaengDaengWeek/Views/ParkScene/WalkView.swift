@@ -7,7 +7,7 @@
 
 import SwiftUI
 import SpriteKit
-import HealthKit
+import CoreMotion
 import SDWebImageSwiftUI
 
 // 산책 화면

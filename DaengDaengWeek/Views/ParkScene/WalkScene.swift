@@ -32,7 +32,7 @@ class WalkScene: SKScene {
         background2.position = CGPoint(x: background1.size.width, y: size.height / 2)
         background2.size = size //배경 화면에 꽉 차게 조정
         
-        dog = SKSpriteNode(imageNamed: "WalkDog1")
+        dog = SKSpriteNode(imageNamed: "WalkDog-1")
         dog.size = CGSize(width: 494, height: 247)
         dog.position = CGPoint(x: size.width * 0.2, y: size.height * 0.45)
 
@@ -45,7 +45,7 @@ class WalkScene: SKScene {
         var textures: [SKTexture] = []
         
         for i in 1...6 {
-            textures.append(SKTexture(imageNamed: "WalkDog\(i)"))
+            textures.append(SKTexture(imageNamed: "WalkDog-\(i)"))
         }
         
         let animationAction = SKAction.animate(with: textures, timePerFrame: 0.18)
